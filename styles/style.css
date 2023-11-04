@@ -4,7 +4,7 @@ html {
     height: 100%;
 }
 
-.title{
+.title {
     font-size: 50px;
     margin-bottom: 3%;
 }
@@ -23,24 +23,36 @@ body {
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Firefox */
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(9, 1fr); /* Create 9 columns */
-    grid-gap: 2px; 
-    /* align-items: center; */
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 0px;
 }
 
 
+/* Add a gap at the bottom of "cell-2-8" */
+.cellClass:nth-child(27) {
+    margin-bottom: 20px; /* Adjust the margin to create a gap at the bottom */
+    /* margin-left: 20px; */
+}
+
+
+/* Add a gap at the bottom of "cell-5-8" */
+.cellClass:nth-child(54) {
+    margin-bottom: 20px; /* Adjust the margin to create a gap at the bottom */
+}
+
 .cellClass {
+    margin: 0;
     height: 100px; /* Fixed height for each cell */
     width: 100px; /* Fixed width for each cell */
     text-align: center;
@@ -52,30 +64,18 @@ input[type=number] {
     border-radius: 10%;
     box-sizing: border-box;
 }
-.cellClass:hover{
-    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+.cellClass:hover {
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.buttons{
+.buttons {
     margin-top: 20px;
     /* height: 100vh; */
 }
 
 /* buttons */
-.solve{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 20px 20px 20px 20px;
-    width: 170px;
-    height: 30px;
-    margin-bottom: 10px;
-    
-    
-}
-.clear{
+.solve {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -86,12 +86,24 @@ input[type=number] {
     margin-bottom: 10px;
 }
 
-.solve:hover{   
-    cursor: pointer;
-    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.clear {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px 20px 20px 20px;
+    width: 170px;
+    height: 30px;
+    margin-bottom: 10px;
+}
 
-}
-.clear:hover{
+.solve:hover {
     cursor: pointer;
     box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.clear:hover {
+    cursor: pointer;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+

@@ -53,15 +53,46 @@ for (let row = 0; row < 9; row++) {
     }
 }
 
+// for (let row = 0; row < 9; row++) {
+//     for (let col = 0; col < 9; col++) {
+//         let cell = document.createElement("input");
+//         cell.id = `cell-${row}-${col}`;
+//         cell.className = "cellClass";
+//         cell.type = "number";
+//
+//         // Calculate margins for creating gaps between 3x3 sections
+//         let margin = "0px";
+//         if (row % 3 === 2) {
+//             margin += "0px 0px 6px 0px";
+//         }
+//         if (col % 3 === 2) {
+//             margin += "0px 6px 0px 0px";
+//         }
+//         cell.style.margin = margin;
+//
+//         // Add an event listener to update the grid when the user inputs a number
+//         cell.addEventListener("input", () => {
+//             const value = parseInt(cell.value);
+//             if (!isNaN(value)) {
+//                 grid[row][col] = value;
+//             } else {
+//                 grid[row][col] = 0;
+//             }
+//         });
+//
+//         board.appendChild(cell);
+//     }
+// }
+
 // Function to solve the Sudoku puzzle using backtracking
 function solveSudoku(grid) {
     const emptyCell = findEmptyCell(grid);
-    
+
     // If there are no empty cells, the puzzle is solved
     if (!emptyCell) {
         return true;
     }
-    
+
     const [row, col] = emptyCell;
 
     // Try placing a number from 1 to 9 in the empty cell
