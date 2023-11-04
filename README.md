@@ -11,6 +11,5 @@ Functions:
 
 <br>
 
-![image](https://github.com/AlenM666/Sudoku-Solver/assets/45298508/1d3b19e5-e9de-40ac-abab-b88891950aa7)
-
+![image](https://github.com/AlenM666/Sudoku-Solver/assets/45298508/d342bcdb-82fe-4df8-ba9a-275b62e19ad5)
 
