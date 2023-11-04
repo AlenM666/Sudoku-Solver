@@ -1,6 +1,10 @@
 # Sudoku-Solver 📝
 
+
 ### Simple Sudoku Solver made in JavaScript.
+<br>
+
+Try --> `https://sudoku-solver-xi-jet.vercel.app/`
 
 <br>
 
@@ -8,6 +12,7 @@ Functions:
 - [x] Solve
 - [x] Clear
 - [x] User Input
+
 
 <br>
 
